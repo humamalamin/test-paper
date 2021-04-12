@@ -42,6 +42,12 @@ run php artisan serve
 run php artisan l5-swagger:generate
 ```
 
+## Reference
+
+- [TNTSearch](https://github.com/teamtnt/laravel-scout-tntsearch-driver).
+- [JWT Token](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/).
+- [Swagger Laravel](https://github.com/DarkaOnLine/L5-Swagger).
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
