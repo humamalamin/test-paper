@@ -47,6 +47,7 @@ run php artisan l5-swagger:generate
 - [TNTSearch](https://github.com/teamtnt/laravel-scout-tntsearch-driver).
 - [JWT Token](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/).
 - [Swagger Laravel](https://github.com/DarkaOnLine/L5-Swagger).
+- [Repository Patter](https://medium.com/@Dewey92/repository-pattern-what-e47ddee3364d)
 
 ## License
 
