@@ -59,8 +59,8 @@ class TransactionRepository
 
     public function get()
     {
-        return $this->model->select(DB::raw('SUM(amount) as total_amount'), DB::raw('MONTH(transaction_date) month'))
-            ->groupBy('month')
+        return $this->model->select(DB::raw('SUM(amount) as total_amount'), DB::raw('MONTH(transaction_date) as month'))
+            ->groupBy(DB::raw('MONTH(transaction_date)'))
             ->get();
     }
 

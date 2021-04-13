@@ -214,7 +214,7 @@ class TransactionController extends Controller
         $validated = Validator::make($request->all(), [
             'transaction_date' => 'required|date',
             'reference' => 'required',
-            'amount' => 'required|decimal',
+            'amount' => 'required|numeric',
             'account_id' => 'required|exists:accounts,id'
         ]);
 
@@ -311,7 +311,7 @@ class TransactionController extends Controller
         $validated = Validator::make($request->all(), [
             'transaction_date' => 'required|date',
             'reference' => 'required',
-            'amount' => 'required|decimal',
+            'amount' => 'required|numeric',
             'account_id' => 'required|exists:accounts,id'
         ]);
 
@@ -424,7 +424,7 @@ class TransactionController extends Controller
     {
         $transactions = $this->repository->get();
 
-        return TransactionResource::collection($transactions);
+        return response()->json(['data' => $transactions], 200);
     }
 
     /**
